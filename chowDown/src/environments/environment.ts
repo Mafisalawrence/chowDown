@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyDUgIS-4BjYdM_GvQBG2jW0lrvouE-Tnl4",
-    authDomain: "chow-down-4939a.firebaseapp.com",
-    databaseURL: "https://chow-down-4939a.firebaseio.com",
-    projectId: "chow-down-4939a",
-    storageBucket: "chow-down-4939a.appspot.com",
-    messagingSenderId: "839933929080"
+    apiKey: 'AIzaSyDUgIS-4BjYdM_GvQBG2jW0lrvouE-Tnl4',
+    authDomain: 'chow-down-4939a.firebaseapp.com',
+    databaseURL: 'https://chow-down-4939a.firebaseio.com',
+    projectId: 'chow-down-4939a',
+    storageBucket: 'chow-down-4939a.appspot.com',
+    messagingSenderId: '839933929080'
   }
 };
 
