@@ -11,6 +11,7 @@ export class LoginComponent implements OnInit {
     email: 'newtest@test.com',
     password: '12345678'
   };
+  
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
@@ -19,4 +20,6 @@ export class LoginComponent implements OnInit {
   doLogin() {
     this.authService.doLogin(this.loginValue);
   }
+
 }
+

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { AgmCoreModule } from '@agm/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
@@ -13,11 +14,13 @@ import { AccountComponent } from './components/account/account.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { Routes, RouterModule } from '@angular/router';
+import { LocationComponent } from './components/location/location.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+    {path: 'home', component: HomeComponent },
     {path: 'login', component: LoginComponent},
-    {path: 'registration', component: RegistrationComponent}
+    {path: 'registration', component: RegistrationComponent},
+    {path: 'location', component: LocationComponent}
 ];
 
 @NgModule({
@@ -27,12 +30,19 @@ const routes: Routes = [
     RegistrationComponent,
     AccountComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AgmCoreModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AgmCoreModule.forRoot({
+      apiKey: environment.googleMapsKey
+    }),
     AngularFirestoreModule,
     AngularFireAuthModule,
     RouterModule.forRoot(routes)

@@ -11,7 +11,8 @@ export const environment = {
     projectId: 'chow-down-4939a',
     storageBucket: 'chow-down-4939a.appspot.com',
     messagingSenderId: '839933929080'
-  }
+  },
+  googleMapsKey: 'AIzaSyBHwwkjOY-a-uILnW9ZvO0YLvPRq6ErUm8',
 };
 
 /*
