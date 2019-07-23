@@ -8,16 +8,6 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  navigationInProgress = false;
-  constructor(private router: Router) {}
+  constructor() {}
 
-  goToLocation() {
-    this.navigationInProgress = !this.navigationInProgress;
-    this.router.navigate(['location']);
-  }
-
-  goToAuthentication() {
-    this.navigationInProgress = !this.navigationInProgress;
-    this.router.navigate(['login']);
-  }
 }

@@ -7,6 +7,7 @@ import { AuthService } from 'src/app/services/auth.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
   loginValue = {
     email: 'newtest@test.com',
     password: '12345678'
@@ -15,7 +16,7 @@ export class LoginComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
-    this.doLogin();
+  //  this.doLogin();
   }
   doLogin() {
     this.authService.doLogin(this.loginValue);
