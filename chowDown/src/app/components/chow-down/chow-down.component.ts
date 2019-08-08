@@ -10,14 +10,5 @@ export class ChowDownComponent implements OnInit {
 
   constructor(private router:Router) { }
 
-  ngOnInit() {
-  }
-  goToLocation() {
-    this.router.navigate(['location']);
-  }
-
-  goToAuthentication() {
-    this.router.navigate(['login']);
-  }
-
+  ngOnInit() {}
 }

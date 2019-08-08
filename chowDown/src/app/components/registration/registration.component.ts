@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
-  selector: 'app-registration',
+  selector: 'registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.css']
 })
@@ -16,7 +16,7 @@ export class RegistrationComponent implements OnInit {
   constructor(private authService: AuthService) { }
 
   ngOnInit() {
-    this.doRegistration();
+   // this.doRegistration();
   }
 
   doRegistration() {

@@ -1,9 +1,15 @@
 .container-fluid {
     height:100%;
 }
-.brand-button {
+.brand-button-filled {
     width:100%;
-    padding: 13px;
+    padding: 10px;
     border: none;
-    background-color: whitesmoke;
 }
+.brand-button-outlined {
+    width:100%;
+    padding: 10px;
+    border: 2px solid lightgray;
+    background-color:white;
+}
+
