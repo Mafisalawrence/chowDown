@@ -18,8 +18,8 @@ import { LocationComponent } from './components/location/location.component';
 import { ChowDownComponent } from './components/chow-down/chow-down.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: 'chow', pathMatch: 'full'}, 
-    {path: 'chow', component:ChowDownComponent},  
+    {path: '', redirectTo: 'chow', pathMatch: 'full'},
+    {path: 'chow', component: ChowDownComponent},
     {path: 'home', component: HomeComponent },
     {path: 'login', component: LoginComponent},
     {path: 'registration', component: RegistrationComponent},
